@@ -1,0 +1,289 @@
+/*fuente*/
+@font-face {
+    font-family: "pixelFont"; /* Nombre de la fuente */
+    src: url("./slkscr.ttf") format('truetype'); /* Ruta al archivo TTF */
+  
+}
+body{
+    
+    font-family: "pixelFont", sans-serif;
+    background-color: rgb(173, 89, 125);
+}
+
+/*HEADER*/
+
+header {
+    border-radius: 20px;
+    background-color: #18e93b;
+    padding: 10px;
+    box-shadow: 5px 2px 2px rgb(154, 71, 15);
+
+}
+
+header h1 {
+    text-align: center;
+    font-size:30px; 
+    font-weight:300;
+    color:#222; 
+    letter-spacing:1px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+} 
+
+#logo {
+    margin-left: 2%;
+    width: 5.8%;
+    border:  rgba(15, 37, 162, 0.548) 5px solid;
+    border-radius: 50%;
+    transition:  2s all;
+    animation: agrandar 5s infinite ; /*animacion para girar toda la imagen*/
+
+}
+
+/*animacion principal de la imagen*/
+@keyframes agrandar {
+    0% { 
+        transform: scale(1) 
+    } 
+    50% { 
+        transform: scale(1.2)
+    } 
+    100% { 
+        transform: scale(1)
+    } 
+  }
+  
+
+  
+
+#logo:hover {
+
+    animation: animacion 5s infinite ; /*animacion para girar toda la imagen*/
+    transition:  2s all;
+   
+}
+
+@keyframes animacion{ /*animacion para rotar logo del header*/
+    0%{
+        transform: rotateY(0deg); /*primer fotograma*/
+    }
+    100%{
+        transform: rotateY(365deg); /*ultimo fotograma*/
+    }
+}
+
+
+header h1 {
+    position: absolute;
+    top: 7.8%; /*aparece en el centro*/
+    right: 50%;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+/*NAV*/
+
+nav{
+    padding: 1%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #1ba0a0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 2px 5px;
+    margin: 0px; 
+}
+
+nav li {
+    margin-right: 2%;
+    display: inline;
+    font-weight: bold;
+    font-size: small;
+}
+
+nav button {
+    border-radius: 20px;
+    background-color: rgb(98, 25, 170);
+    color: white;
+    font-family: "pixelFont", sans-serif;
+
+     /* font-family:'Courier New', Courier, monospace; */
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 2px 2px 2px rgb(116, 214, 25);
+    transition:  2s all;
+}
+
+nav button:hover {
+    color: white;
+    background-color: darkblue;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px rgb(190, 173, 173);
+    transition:  2s all;
+
+}
+
+nav button:focus {
+    background-color: rgba(222, 181, 32, 0.951);
+    color: rgba(54, 10, 229, 0.927);
+    transition:  2s all;
+
+}
+
+
+/*DIVS */
+#numProductosTotales{
+    /* margin : 0px; */
+    margin-top: 0.5%;
+    margin-left: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    transition: 2s all;
+    text-align: right;
+    border-radius: 15px;
+    background-color: rgb(41, 149, 215);
+    color: rgb(97, 7, 7);
+    width: fit-content;
+    box-shadow: -5px 5px 5px rgb(68, 2, 131);
+
+}
+
+#numProductosTotales:hover{
+    background-color: rgb(97, 7, 7);
+    color: rgb(41, 149, 215);
+
+}
+
+
+#vistaMostrar{
+    transition: 10s all;
+    display: none;
+    vertical-align: top;
+}
+
+#vistaBuscar{
+    display: none;
+
+}
+
+#vistaObtenerCategorias{
+    display: none;
+
+}
+
+#vistaAddProduct{
+    display: none;
+
+}
+
+
+#vistaDeleteProduct{
+    display: none;
+
+}
+
+/*PRODUCTOS MOSTRAR*/
+.productos {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20px;
+    color: rgba(153, 0, 255, 0.829);
+    text-align: center;
+    float: left;
+    width: 30%;
+    min-height: 750px;
+    margin: 1%;
+    border: 1px solid rgb(51, 5, 51);
+    background-color: rgb(188, 236, 214);
+    font-weight: bold;
+    transition: 2s all;
+
+}
+
+.productos .thumbnail{
+    border-radius:  20px;
+    width: 50%;
+}
+
+.productos .divImages img{
+    border: 20px;
+    width: 20%;
+
+}
+
+.productos .divImages{
+    text-align: center;
+}
+
+.productos:hover {
+    transition: 2s all;
+    box-shadow: 10px 5px 5px   #14e737;
+}
+
+/*FORMULARIO*/
+.formulario{
+    margin-left: 35%;
+    width: fit-content;
+}
+
+.formulario input:hover {
+    border-color: red;
+}
+
+.formulario fieldset{
+    background-color: lightblue;
+    box-shadow: 5px 2px 2px rgb(49, 32, 208);
+
+    border-radius: 20px;
+}
+
+.formulario legend{
+    background-color: white; 
+    border: black solid 1px;
+    box-shadow: 5px 2px 2px rgb(154, 71, 15);
+
+    border-radius: 5px;
+}
+
+.boton {
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.boton:active {
+    background-color: rgb(48, 177, 177);
+    color: black;
+    
+}
+
+select{
+    font-family: "pixelFont", sans-serif;
+}
+
+
+.miSelect > option {
+    background-color: rgb(255, 127, 140);
+}
+
+
+/*div de errores*/
+
+.error {
+    margin-top: 2%;
+    margin-left: 35%;
+    width: fit-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    color: red;
+    border: thin solid red;
+    padding: 5px;
+}

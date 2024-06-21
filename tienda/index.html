@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Badulaque</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/main.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <img src="./media/img/logoTienda.jpg" id="logo">
+        <h1 id="titulo" style="display: inline;">El Badulaque</h1>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li> 
+                <button id="mostrar">Mostrar todos</button>
+            </li>
+           
+            <li>
+                <button id="buscar">Buscar por precio o titulo</button>
+                
+            </li>
+            <li>
+                <button id="obtenerCategorias">Obtener Categorías</button>
+                
+            </li>
+            <li>
+                <button id="addProduct"> Añadir producto</button>
+               
+            </li>
+            <li>
+                <button id="deleteProducto"> Borrar producto</button>
+            </li>
+
+        </ul>
+    </nav>
+    <div id="numProductosTotales">
+
+    </div>
+    <div id="vistaMostrar">
+        
+    </div>
+    <div id="vistaBuscar">
+        <form class="formulario" id="formularioBuscar" method="POST">
+            <fieldset>
+                <legend><b>Buscar por nombre y precio</b></legend>
+                <label><b>Nombre: </b></label>
+                <input type="text" id="nombre" placeholder="Nombre producto"><br>
+                <label><b>Precio: </b></label>
+                <input type="number" id="precio" placeholder="Precio máximo"><br><br>
+                <input type="submit" id="buscarProducto" value="Buscar producto" class="boton">
+                <input type="reset"  value="Limpiar campos" class="boton">
+
+            </fieldset>
+        </form>
+
+    </div>
+    <div id="vistaObtenerCategorias">
+        
+    </div>
+    <div id="vistaAddProduct">
+        <form class="formulario" id="formularioAdd">
+            <fieldset>
+                <legend><b>Crear producto</b></legend>
+                <label for="title"><b>Nombre: </b></label>
+                <input type="text" id="title"><br>
+
+
+                <label for="description"><b>Descripción: </b></label>
+                <input type="text" id="description" maxlength="50"><br>
+
+                
+                <label for="price"><b>Precio: </b></label>
+                <input type="text" id="price" ><br>
+
+                <label for="discountPercentage"><b>Descuento: </b></label>
+                <input type="text" id="discountPercentage" placeholder="21%"><br>
+
+                <label for="rating"><b>Puntuación: </b></label>
+                <input type="text" id="rating" ><br>
+
+
+                <label for="stock"><b>Nº de unidades: </b></label>
+                <input type="number" id="stock" ><br>
+
+                <label for="brand"><b>Marca: </b></label>
+                <input type="text" id="brand" ><br>
+
+                
+                <label for="category"><b>Categoría: </b></label>
+                <select id="category"></select><br>
+
+                <label for="thumbnail"><b>Imagen principal: </b></label>
+                <input type="text" id="thumbnail" ><br>
+
+                <label for="images"><b>Imagenes: </b></label>
+                <input type="text" id="images" placeholder="Añade varias imágenes" >
+                <button id="addFoto" class="boton">Añade imagen</button><br><br>
+
+                <input type="submit" value="Añadir producto" id="creaProducto" class="boton" >
+                <input type="reset" value="Limpiar campos" class="boton">
+            </fieldset>
+        </form>
+    </div>
+
+
+    <div id="vistaDeleteProduct">
+        <form class="formulario" id="formularioDelete" method="POST">
+            <fieldset>
+                <legend><b>Elige el producto a borrar</b></legend>
+                <select id="selectDeleteProducto"></select>
+            </fieldset>
+        </form>
+    </div>
+    <div id="respuesta"> <!-- RESPUESTAS de las distintas opciones -->
+
+    </div>
+
+
+
+
+
+    <!--http://localhost/DWEC/tienda/index.html-->
+</body>
+</html>
