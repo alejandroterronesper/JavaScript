@@ -1,0 +1,39 @@
+﻿<mensajes>
+
+<mensaje>
+	<de>Antonio</de>
+	<para>Lucía</para>
+	<dia>5 Marzo</dia>
+	<hora>12:34</hora>
+	<texto>Hola, ¿qué haces hoy?</texto>
+</mensaje>
+<mensaje>
+	<de>Lucía</de>
+	<para>Antonio</para>
+	<dia>5 Marzo</dia>
+	<hora>12:40</hora>
+	<texto>Pues tengo lio. Mañana tengo examen de programación</texto>
+</mensaje>
+<mensaje>
+	<de>Antonio</de>
+	<para>Lucía</para>
+	<dia>5 Marzo</dia>
+	<hora>12:43</hora>
+	<texto>Vayaaa!!! Entonces de tomar algo ni hablamos, ¿no?</texto>
+</mensaje>
+<mensaje>
+	<de>Lucía</de>
+	<para>Antonio</para>
+	<dia>5 Marzo</dia>
+	<hora>12:50</hora>
+	<texto>¡Qué va! Otro día mejor</texto>
+</mensaje>
+<mensaje>
+	<de>Antonio</de>
+	<para>Lucía</para>
+	<dia>5 Marzo</dia>
+	<hora>12:53</hora>
+	<texto>OK! Suerte para el examen.</texto>
+</mensaje>
+
+</mensajes>
